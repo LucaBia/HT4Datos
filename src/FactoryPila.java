@@ -1,11 +1,11 @@
 public class FactoryPila {
     public static Pila createPila(String tipo) {
         switch (tipo) {
-            case "arrayList": return new PilaArrayL();
-            case "listSimple": return new PilaLst("simple");
-            case "listDouble": return new PilaLst("double");
-            case "listCircular": return new PilaLst("circular");
-            case "vector": return new PilaVector();
+            case "AL": return new PilaArrayL();
+            case "SL": return new PilaLst("simple");
+            case "DL": return new PilaLst("double");
+            case "CL": return new PilaLst("circular");
+            case "V": return new PilaVector();
             default: return null;
         }
     }

@@ -4,6 +4,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Scanner;
 import java.util.stream.Stream;
 
 /**
@@ -12,8 +13,20 @@ import java.util.stream.Stream;
  */
 public class Main {
     public static void main(String[] args){
-        Pila pila = new PilaVector();
+        Scanner read = new Scanner(System.in);
         MyCalculator calculator = MyCalculator.createCalculator();
+        Pila pila;
+        String tipo;
+
+        System.out.println("Ingrese la implementacion de Stack que desea usar: ");
+        System.out.println("ArrayList: AL");
+        System.out.println("Vector: V");
+        System.out.println("SimpleList: SL");
+        System.out.println("DoubleList: DL");
+        System.out.println("CircularList: CL");
+        tipo = read.next();
+
+        pila = FactoryPila.createPila(tipo);
 
         //para leer el archivo
         ArrayList<String> archivo = new ArrayList<>();
