@@ -12,6 +12,9 @@ import java.util.stream.Stream;
  */
 public class Main {
     public static void main(String[] args){
+        Pila pila = new PilaVector();
+        MyCalculator calculator = MyCalculator.createCalculator();
+
         //para leer el archivo
         ArrayList<String> archivo = new ArrayList<>();
         try {
@@ -23,8 +26,6 @@ public class Main {
         } catch (IOException e ){
             System.out.println("Ha ocurrido un error");
         }
-        Pila pila = new PilaVector();
-        MyCalculator calculator = new MyCalculator();
 
 
         for (String anArchivo : archivo) {

@@ -3,6 +3,18 @@
  */
 public class MyCalculator implements Calculator {
 
+    private static MyCalculator calculator;
+
+    private MyCalculator(){}
+
+    //Singleton
+    public static MyCalculator createCalculator() {
+        if (calculator == null) {
+            calculator = new MyCalculator();
+        }
+        return calculator;
+    }
+
     /**
      * Calcula cuales van a ser los numeros u operandos y el signo u operador
      * @param num1 primer operando / numero
