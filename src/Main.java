@@ -55,12 +55,12 @@ public class Main {
                     if (!anOperacion.equals(" ")) {
                         int num1 = (int) pila.pop();
                         int num2 = (int) pila.pop();
-                        int resultado = calculator.calculate(num2, num1, anOperacion);
+                        int resultado = calculator.calculate(num1, num2, anOperacion);
                         pila.push(resultado);
                     }
                 }
             }
-            System.out.println("resultado = " + pila.peek());
+            System.out.println("resultado = " + pila.pop());
         }
     }
 }

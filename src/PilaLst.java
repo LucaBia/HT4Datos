@@ -9,13 +9,13 @@ public class PilaLst<E> extends Pila<E> {
     @Override
     public void push(E item) {
         //Will be popped next if no intervening push
-        lst.add(item);
+        lst.addLast(item);
     }
 
     @Override
     public E pop() {
         //Most recently pushed item is removed and returned
-        return (E) lst.remove(size() -1);
+        return (E) lst.removeLast();
     }
 
     @Override

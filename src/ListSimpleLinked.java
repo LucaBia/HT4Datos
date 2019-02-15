@@ -44,6 +44,25 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
     }
 
     @Override
+    public E removeLast() {
+        Node<E> finger = head;
+        Node<E> previous = null;
+
+        while (finger.next() != null) {
+            previous = finger;
+            finger = finger.next();
+        }
+
+        if (previous == null) {
+            head = null;
+        } else {
+            previous.setNext(null);
+        }
+        count--;
+        return finger.value();
+    }
+
+    @Override
     public void addLast(E value) {
         // post: adds value to end of list
         // location for new value
@@ -73,13 +92,13 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
     }
 
     @Override
-    public void clear() {
-
+    public E getLast() {
+        return null;
     }
 
     @Override
-    public E removeLast() {
-        return null;
+    public void clear() {
+
     }
 
     @Override
@@ -99,11 +118,6 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
 
     @Override
     public E get() {
-        return null;
-    }
-
-    @Override
-    public E getLast() {
         return null;
     }
 

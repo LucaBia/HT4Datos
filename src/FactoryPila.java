@@ -6,6 +6,11 @@ public class FactoryPila {
             case "DL": return new PilaLst("double");
             case "CL": return new PilaLst("circular");
             case "V": return new PilaVector();
+            case "al": return new PilaArrayL();
+            case "sl": return new PilaLst("simple");
+            case "dl": return new PilaLst("double");
+            case "cl": return new PilaLst("circular");
+            case "v": return new PilaVector();
             default: return null;
         }
     }
