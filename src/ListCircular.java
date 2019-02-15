@@ -10,6 +10,7 @@ public class ListCircular<E> extends AbstractList<E> {
         count = 0;
     }
 
+    @Override
     public void addFirst(E value) {
         // pre: value non-null
         // post: adds element to head of list
@@ -26,6 +27,7 @@ public class ListCircular<E> extends AbstractList<E> {
         count++;
     }
 
+    @Override
     public void addLast(E value) {
         // pre: value non-null
         // post: adds element to tail of list
@@ -34,6 +36,7 @@ public class ListCircular<E> extends AbstractList<E> {
         tail = tail.next();
     }
 
+    @Override
     public E removeLast() {
         // pre: !isEmpty()
         // post: returns and removes value from tail of list
