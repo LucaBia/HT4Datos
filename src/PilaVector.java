@@ -17,13 +17,13 @@ public class PilaVector<E> extends Pila<E> {
     @Override
     public E pop() {
         //Most recently pushed item is removed and returned
-        return vector.remove(0);
+        return vector.remove(size() -1);
     }
 
     @Override
     public E peek() {
         //Top value (next to be popped) is returned
-        return vector.get(0);
+        return vector.get(size() -1);
     }
 
     @Override

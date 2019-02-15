@@ -18,13 +18,13 @@ public class PilaLst<E> extends Pila<E> {
     @Override
     public E pop() {
         //Most recently pushed item is removed and returned
-        return lst.remove(0);
+        return lst.remove(size() -1);
     }
 
     @Override
     public E peek() {
         //Top value (next to be popped) is returned
-        return lst.get(0);
+        return lst.get(size() -1);
     }
 
     @Override

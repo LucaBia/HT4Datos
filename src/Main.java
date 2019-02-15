@@ -13,14 +13,14 @@ import java.util.stream.Stream;
 public class Main {
     public static void main(String[] args){
         //para leer el archivo
-        ArrayList<String> archivo = new ArrayList<String>();
+        ArrayList<String> archivo = new ArrayList<>();
         try {
             Stream<String> lines = Files.lines(
                     Paths.get("datos.txt"),
                     StandardCharsets.UTF_8
             );
             lines.forEach(archivo::add);
-        }catch (IOException e ){
+        } catch (IOException e ){
             System.out.println("Ha ocurrido un error");
         }
         Pila pila = new PilaVector();

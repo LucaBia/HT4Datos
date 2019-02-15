@@ -17,13 +17,13 @@ public class PilaArrayL<E> extends Pila<E>{
     @Override
     public E pop() {
         //Most recently pushed item is removed and returned
-        return arraylst.remove(0);
+        return arraylst.remove(size() -1);
     }
 
     @Override
     public E peek() {
         //Top value (next to be popped) is returned
-        return arraylst.get(0);
+        return arraylst.get(size() -1);
     }
 
     @Override

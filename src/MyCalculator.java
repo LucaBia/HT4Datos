@@ -11,7 +11,7 @@ public class MyCalculator implements Calculator {
      * @return resultado del calculo
      */
     @Override
-    public int calculate(int num1, int num2, String op){
+    public int calculate(int num1, int num2, String op) {
         int res = 0;
 
         switch (op) {
@@ -19,13 +19,13 @@ public class MyCalculator implements Calculator {
                 res = num1 + num2;
                 break;
             case "-":
-                res = num2 - num1;
+                res = num1 - num2;
                 break;
             case "*":
                 res = num1 * num2;
                 break;
             case "/":
-                res = num2 / num1;
+                res = num1 / num2;
                 break;
         }
         return res;
