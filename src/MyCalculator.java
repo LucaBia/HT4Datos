@@ -26,19 +26,22 @@ public class MyCalculator implements Calculator {
     public int calculate(int num1, int num2, String op) {
         int res = 0;
 
-        switch (op) {
-            case "+":
-                res = num1 + num2;
-                break;
-            case "-":
-                res = num2 - num1;
-                break;
-            case "*":
-                res = num1 * num2;
-                break;
-            case "/":
-                res = num2 / num1;
-                break;
+        if ("+".equals(op)) {
+            res = num1 + num2;
+
+        } else if ("-".equals(op)) {
+            res = num2 - num1;
+
+        } else if ("*".equals(op)) {
+            res = num1 * num2;
+
+        } else if ("/".equals(op)) {
+            if (num2 == 0) {
+                return 0;
+
+            }
+            res = num2 / num1;
+
         }
         return res;
     }

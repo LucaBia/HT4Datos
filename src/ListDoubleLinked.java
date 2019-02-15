@@ -36,10 +36,8 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
 
     @Override
     public E removeLast() {
-        //####################################################################################################
         // pre: list is not empty
         // post: removes value from tail of list
-        /*
         NodeDoubleLinked<E> temp = tail;
         tail = tail.previous();
         if (tail == null) {
@@ -49,8 +47,6 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
         }
         count--;
         return temp.value();
-        */
-        return null;
     }
 
     @Override

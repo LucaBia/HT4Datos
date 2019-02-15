@@ -17,4 +17,28 @@ public class NodeDoubleLinked<E> {
         // post: constructs a single element
         this(v,null,null);
     }
+
+    public NodeDoubleLinked<E> next() {
+        // post: returns reference to next value in list
+        return nextElement;
+    }
+
+    public void setNext(NodeDoubleLinked<E> next) {
+        // post: sets reference to new next value
+        nextElement = next;
+    }
+
+    public E value() {
+        // post: returns value associated with this element
+        return data;
+    }
+
+    public void setValue(E value) {
+        // post: sets value associated with this element
+        data = value;
+    }
+
+    public NodeDoubleLinked previous() {
+        return this.previousElement;
+    }
 }
