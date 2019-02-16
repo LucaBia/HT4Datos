@@ -6,7 +6,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.stream.Stream;
-
+//Francisco Rosal - 18676
+// Gian Luca RIvera - 18049
+// Estructura de datos
+//Este programa realiza operaciones aritmeticas con numeros del 1 al 9 utilizando el metodo postfix
 /**
  * Clase principal
  * @author gianlucariverabiagioni / franciscorosal
