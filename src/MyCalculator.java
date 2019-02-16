@@ -5,7 +5,7 @@ public class MyCalculator implements Calculator {
 
     private static MyCalculator calculator;
 
-    private MyCalculator(){}
+    public MyCalculator(){}
 
     //Singleton
     public static MyCalculator createCalculator() {
