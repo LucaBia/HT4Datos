@@ -37,7 +37,15 @@ public class MyCalculator implements Calculator {
 
         } else if ("/".equals(op)) {
             if (num2 == 0) {
+                /*try{
+                    int cero = 0;
+                    throw new ArithmeticException();
+                    //return 0;
+                }catch(ArithmeticException ae){
+                    System.out.println("Division entre cero");
+                }*/
                 return 0;
+
 
             }
             res = num2 / num1;

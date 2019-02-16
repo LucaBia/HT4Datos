@@ -55,8 +55,14 @@ public class Main {
                     if (!anOperacion.equals(" ")) {
                         int num1 = (int) pila.pop();
                         int num2 = (int) pila.pop();
-                        int resultado = calculator.calculate(num1, num2, anOperacion);
-                        pila.push(resultado);
+                        if (anOperacion.equals("/") && num1 == 0){
+                            String cadena = "Excepcion Aritmetica: Se encontro una división entre cero";
+                            //System.out.println(cadena);
+                            pila.push(cadena);
+                        }else{
+                            int resultado = calculator.calculate(num1, num2, anOperacion);
+                            pila.push(resultado);
+                        }
                     }
                 }
             }
