@@ -1,10 +1,17 @@
 import java.util.Iterator;
 
+/**
+ * Clase double linked
+ * @param <E> generico
+ */
 public class ListDoubleLinked<E> extends AbstractList<E> {
     private int count;
     protected NodeDoubleLinked<E> head;
     private NodeDoubleLinked<E> tail;
 
+    /**
+     * Estado inicial
+     */
     public ListDoubleLinked() {
         // post: constructs an empty list
         head = null;
@@ -12,6 +19,10 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
         count = 0;
     }
 
+    /**
+     * Agrega un valor al inicio de la lista
+     * @param value valor
+     */
     @Override
     public void addFirst(E value) {
         // pre: value is not null
@@ -23,6 +34,10 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
         count++;
     }
 
+    /**
+     * Agrega un valor al final de la lista
+     * @param value valor
+     */
     @Override
     public void addLast(E value) {
         // pre: value is not null
@@ -34,6 +49,10 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
         count++;
     }
 
+    /**
+     * Elimina el ultimo valor de la lista
+     * @return valor
+     */
     @Override
     public E removeLast() {
         // pre: list is not empty
@@ -49,51 +68,88 @@ public class ListDoubleLinked<E> extends AbstractList<E> {
         return temp.value();
     }
 
+    /**
+     * Tamanio de la lista
+     * @return 0
+     */
     @Override
     public int size() {
         return 0;
     }
 
+    /**
+     * Limpia toda la lista
+     */
     @Override
     public void clear() {
 
     }
 
+    /**
+     * Captura el valor del primer elemento
+     * @return null
+     */
     @Override
     public E getFirst() {
         return null;
     }
 
+    /**
+     * Captura el valor del ultimo elemento
+     * @return null
+     */
     @Override
     public E getLast() {
         return null;
     }
 
+    /**
+     * Elimina el primer elemento
+     * @return null
+     */
     @Override
     public E removeFirst() {
         return null;
     }
 
 
+    /**
+     * Elimina
+     * @param value valor
+     * @return null
+     */
     @Override
     public E remove(E value) {
         return null;
     }
 
+    /**
+     * Agrega
+     * @param value valor
+     */
     @Override
     public void add(E value) {
 
     }
 
+    /**
+     * Elimina
+     * @return null
+     */
     @Override
     public E remove() {
         return null;
     }
 
+    /**
+     * Captura
+     * @return null
+     */
     @Override
     public E get() {
         return null;
     }
+
 
     @Override
     public int indexOf(E value) {

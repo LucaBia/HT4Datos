@@ -56,7 +56,7 @@ public class Main {
                         int num1 = (int) pila.pop();
                         int num2 = (int) pila.pop();
                         if (anOperacion.equals("/") && num1 == 0){
-                            String cadena = "Excepcion Aritmetica: Se encontro una división entre cero";
+                            String cadena = "Excepcion Aritmetica: Se encontro una division entre cero";
                             //System.out.println(cadena);
                             pila.push(cadena);
                         }else{

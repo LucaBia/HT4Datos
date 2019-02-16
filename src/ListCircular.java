@@ -16,7 +16,7 @@ public class ListCircular<E> extends AbstractList<E> {
 
     /**
      * Agrega el valor al inicio
-     * @param value
+     * @param value valor
      */
     @Override
     public void addFirst(E value) {
@@ -37,7 +37,7 @@ public class ListCircular<E> extends AbstractList<E> {
 
     /**
      * Agrega el valor de ultimo
-     * @param value
+     * @param value valor
      */
     @Override
     public void addLast(E value) {
@@ -50,7 +50,7 @@ public class ListCircular<E> extends AbstractList<E> {
 
     /**
      * Elimina el ultimo dato de la lista
-     * @return
+     * @return valor
      */
     @Override
     public E removeLast() {
@@ -73,7 +73,7 @@ public class ListCircular<E> extends AbstractList<E> {
     }
 
     /**
-     * tamaño de la lista
+     * tamanio de la lista
      * @return 0
      */
     @Override
@@ -100,33 +100,54 @@ public class ListCircular<E> extends AbstractList<E> {
 
     /**
      * obtiene el ultimo valor de la lista
-     * @return
+     * @return null
      */
     @Override
     public E getLast() {
         return null;
     }
 
+    /**
+     * Elimina el primer elemento de la lista
+     * @return null
+     */
     @Override
     public E removeFirst() {
         return null;
     }
 
+    /**
+     * Elimina algun elemento seleccionado
+     * @param value valor
+     * @return null
+     */
     @Override
     public E remove(E value) {
         return null;
     }
 
+    /**
+     * Agrega un elemento a la lista
+     * @param value valor
+     */
     @Override
     public void add(E value) {
 
     }
 
+    /**
+     * Elimina
+     * @return null
+     */
     @Override
     public E remove() {
         return null;
     }
 
+    /**
+     * Captura
+     * @return null
+     */
     @Override
     public E get() {
         return null;

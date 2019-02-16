@@ -1,5 +1,9 @@
 import java.util.Iterator;
 
+/**
+ * calae lista simple linked
+ * @param <E> generico
+ */
 public class ListSimpleLinked<E> extends AbstractList<E> {
 
     private int count; // list size
@@ -11,12 +15,20 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         count = 0;
     }
 
+    /**
+     * Tamanio de la lista
+     * @return tamanio
+     */
     @Override
     public int size() {
         // post: returns number of elements in list
         return count;
     }
 
+    /**
+     * Agrega al inicio de la lista
+     * @param value valor
+     */
     @Override
     public void addFirst(E value) {
         // post: value is added to beginning of list
@@ -26,6 +38,10 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         count++;
     }
 
+    /**
+     * Elimina el primero de la lista
+     * @return valor
+     */
     @Override
     public E removeFirst() {
         // pre: list is not empty
@@ -36,6 +52,10 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         return temp.value();
     }
 
+    /**
+     * Captura el primer elemento
+     * @return valor
+     */
     @Override
     public E getFirst() {
         // pre: list is not empty
@@ -43,6 +63,10 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         return head.value();
     }
 
+    /**
+     * Elimina el ultimo elemento
+     * @return valor
+     */
     @Override
     public E removeLast() {
         Node<E> finger = head;
@@ -62,6 +86,10 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         return finger.value();
     }
 
+    /**
+     * Agrega como ultimo elemento
+     * @param value valor
+     */
     @Override
     public void addLast(E value) {
         // post: adds value to end of list
@@ -79,6 +107,11 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         count++;
     }
 
+    /**
+     * Verifica que un valor este dentro de la lista
+     * @param value valor
+     * @return true/false
+     */
     @Override
     public boolean contains(E value) {
         // pre: value is not null
@@ -91,21 +124,37 @@ public class ListSimpleLinked<E> extends AbstractList<E> {
         return finger != null;
     }
 
+    /**
+     * Captura el ultimo valor
+     * @return null
+     */
     @Override
     public E getLast() {
         return null;
     }
 
+    /**
+     * Limpia la lista completa
+     */
     @Override
     public void clear() {
 
     }
 
+    /**
+     * Elimina
+     * @param value valor
+     * @return null
+     */
     @Override
     public E remove(E value) {
         return null;
     }
 
+    /**
+     * Agrega
+     * @param value valor
+     */
     @Override
     public void add(E value) {
 
