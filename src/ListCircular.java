@@ -1,5 +1,9 @@
 import java.util.Iterator;
 
+/**
+ * Clase de la lista circular
+ * @param <E> generico
+ */
 public class ListCircular<E> extends AbstractList<E> {
     private Node<E> tail;
     private int count;
@@ -10,6 +14,10 @@ public class ListCircular<E> extends AbstractList<E> {
         count = 0;
     }
 
+    /**
+     * Agrega el valor al inicio
+     * @param value
+     */
     @Override
     public void addFirst(E value) {
         // pre: value non-null
@@ -27,6 +35,10 @@ public class ListCircular<E> extends AbstractList<E> {
         count++;
     }
 
+    /**
+     * Agrega el valor de ultimo
+     * @param value
+     */
     @Override
     public void addLast(E value) {
         // pre: value non-null
@@ -36,6 +48,10 @@ public class ListCircular<E> extends AbstractList<E> {
         tail = tail.next();
     }
 
+    /**
+     * Elimina el ultimo dato de la lista
+     * @return
+     */
     @Override
     public E removeLast() {
         // pre: !isEmpty()
@@ -56,21 +72,36 @@ public class ListCircular<E> extends AbstractList<E> {
         return temp.value();
     }
 
+    /**
+     * tamaño de la lista
+     * @return 0
+     */
     @Override
     public int size() {
         return 0;
     }
 
+    /**
+     * limpia toda la lista
+     */
     @Override
     public void clear() {
 
     }
 
+    /**
+     * Obtiene el primer valor de la lista
+     * @return null
+     */
     @Override
     public E getFirst() {
         return null;
     }
 
+    /**
+     * obtiene el ultimo valor de la lista
+     * @return
+     */
     @Override
     public E getLast() {
         return null;

@@ -1,4 +1,12 @@
+/**
+ * Clase que verifica el menu, el tipo de lista a usar
+ */
 public class FactoryPila {
+    /**
+     * valida con que letras del menu ingresadas correspone a la pila
+     * @param tipo linked
+     * @return tipo
+     */
     public static Pila createPila(String tipo) {
         switch (tipo) {
             case "AL": return new PilaArrayL();
